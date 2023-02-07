@@ -1,10 +1,35 @@
 .row{
     padding: 20px;
+    background-color: black;
     color: aliceblue;
-    }
-    div{
-        background: black;
-    }
-    h3, p{
-        display: inline;
-    }
+}
+
+.conteiner{
+width: auto;
+font-size: x-large;
+}
+
+.part1, .part2{
+    display: inline-block;
+    text-align: justify;
+}
+
+.part3, .part4{
+    display: inline-block;
+    text-align: justify;
+}
+
+.part5, .part6{
+    display: inline-block;
+    text-align: justify;
+}
+
+.part7,.part8{
+    display: inline-block;
+    text-align: justify
+ };
+
+.part2, .part4, .part6, .part8{
+    width: 100px;
+    height: 100px;
+}
