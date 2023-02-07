@@ -30,3 +30,7 @@ font-size: x-large;
 }
 
 
+/*Estilo de las imágenes*/
+#imagenes{
+    border-radius: 100%;
+}

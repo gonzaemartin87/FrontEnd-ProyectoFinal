@@ -29,7 +29,10 @@ font-size: x-large;
     text-align: justify
  };
 
-.part2, .part4, .part6, .part8{
+
+/*Estilo de las imágenes*/
+#imagenes{
+    border-radius: 100%;
     width: 100px;
     height: 100px;
 }
