@@ -2,35 +2,9 @@
     padding: 20px;
     background-color: black;
     color: aliceblue;
+    text-align: center;
 }
 
-.conteiner{
-width: auto;
-font-size: x-large;
-}
-
-.part1, .part2{
-    display: inline-block;
-    text-align: justify;
-}
-
-.part4, .part3{
-    display: inline-block;
-    text-align: justify;
-}
-
-.part5, .part6{
-    display: inline-block;
-    text-align: justify;
-}
-
-.part2, .part4, .part6{
-    width: 100px;
-    height: 100px;
-}
-
-
-/*Estilo de las imágenes*/
-#imagenes{
-    border-radius: 100%;
+.table{
+    color: aliceblue;
 }
