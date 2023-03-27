@@ -1,37 +1,24 @@
 <div class="row">
-    <h2 class="text-center">Educación</h2>
-    <ul>
-        <li><div class="conteiner">
-        <div class="col-sm-12 col-md-7 col-lg7 part1">
-            <p><strong> Instituto José Manuel Estrada</strong> (1998-2005)</p>
-            </div>
-        <div class="col-sm-12 col-md-3 col-lg-3 offset-md-1 offset-lg-1 part2">
-           <a title="IJME" href=""><img src="" class="img-fluid" id="imagenes"></a>
-        </div>
-    </div></li>
-    <li><div class="conteiner">
-        <div class="col-sm-12 col-md-7 col-lg-7 part3">
-            <p><strong> UNLP - Derecho</strong> (2006-2008)</p>
-        </div>
-        <div class="col-sm-12 col-md-3 col-lg-3 offset-md-1 offset-lg-1 part4">
-            <a title="UNLP" href=""><img src="" class="img-fluid" id="imagenes"></a>
-        </div>
-    </div></li>
-    <li><div class="conteiner">
-        <div class="col-sm-12 col-md-3 col-lg-7 part5">
-            <p><strong> Universidad Siglo XXI</strong> (2021-Actualidad)</p>
-        </div>
-        <div class="col-sm-12 col-md-3 col-lg-3 offset-md-1 offset-lg-1 part6">
-            <a title="UXXI" href=""><img src="" class="img-fluid" id="imagenes"></a>
-        </div>
-    </div></li>
-    <li><div class="conteiner">
-        <div class="col-sm-12 col-md-3 col-lg-7 part7">
-            <p><strong> Argentina Programa - Full Stack Developer</strong> (2022-2023)</p>
-        </div>
-        <div class="col-sm-12 col-md-3 col-lg-3 offset-md-1 offset-lg-1 part8">
-            <a title="AP" href=""><img src="" class="img-fluid" id="imagenes"></a>
-        </div>
-    </div></li>
-    </ul>
+    <h2>Educación</h2>
+    <div class="col-lg-2">
+        <button type="button" class="btn btn-dark" routerLink="/nuevaedu" *ngIf="isLogged"><i class="bi bi-plus-circle-dotted">
+            Agregar Educación
+        </i></button>
+    </div>
+
+
+    <div class="col lg 1"></div>
+    <div class="col-lg-11">
+        <table class="table">
+            <tbody>
+                <tr *ngFor="let Educacion of educacion">
+                    <td><h3>{{Educacion.nombreE}}</h3></td>
+                    <td>{{Educacion.descripcionE}}</td>
+                    <td *ngIf="isLogged"><button class="btn btn-light" routerLink="/editedu/{{Educacion.id}}"><i class="bi bi-pencil-fill"></i></button></td>
+
+                    <td *ngIf="isLogged"><button class="btn btn-danger" (click)="delete(Educacion.id)"><i class="bi bi-trash3" ></i></button></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 </div>
