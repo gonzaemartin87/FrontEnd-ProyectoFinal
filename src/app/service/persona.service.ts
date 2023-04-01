@@ -9,7 +9,7 @@ import { persona } from '../model/persona.model';
 })
 
 export class PersonaService {
-  URL = environment.URL + 'usuario/';
+  URL = environment.URL + 'personas/';
 
   constructor(private httpClient: HttpClient) { }
 
