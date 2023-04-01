@@ -1,15 +1,21 @@
+<div>
+    <button type="button" class="btn btn-dark" routerLink="/editacercade/1" *ngIf="isLogged"><i
+            class="bi bi-plus-circle-dotted">Editar</i></button>
+
+</div>
+
 <div class="row">
     <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2 ">
-        <img src="../../../assets/perfilPhoto.jpeg" class="img fluid" id="fotodeperfil">
+        <img src="{{persona.img}}" class="img fluid" id="fotodeperfil">
     </div>
     <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
         <h4 id="nombre">{{persona.nombre}} {{persona.apellido}}</h4>
         <p>Full Stack Developer Jr</p>
     </div>
-    <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
+    <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8 descripcion">
         <span>
             <h2>Acerca de mi / About me</h2>
-            <p>Soy Full Stack Developer Jr, actualmente me desempeño en el  área de Marketing e Investigación de Mercado de una reconocida empresa, y pongo mis conocimientos y experiencia a su alcance...</p>
+            <p>{{persona.descripcion}}</p>
         </span>
     </div>
 </div>
