@@ -24,9 +24,6 @@ import { EditeducacionComponent } from './components/educacion/editeducacion.com
 import { EditskillComponent } from './components/hys/editskill.component';
 import { NewskillComponent } from './components/hys/newskill.component';
 import { EditAcercaDeComponent } from './components/acerca-de/edit-acerca-de.component';
-import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
-import { environment } from '../environments/environment';
-import { provideStorage,getStorage } from '@angular/fire/storage';
 
 @NgModule({
   declarations: [
@@ -55,9 +52,7 @@ import { provideStorage,getStorage } from '@angular/fire/storage';
     AppRoutingModule,
     NgCircleProgressModule.forRoot({}),
     HttpClientModule,
-    FormsModule,
-    provideFirebaseApp(() => initializeApp(environment.firebase)),
-    provideStorage(() => getStorage())
+    FormsModule
   ],
   providers: [
     interceptorProvider

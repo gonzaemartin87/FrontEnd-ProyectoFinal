@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Storage, getDownloadURL, list, ref, uploadBytes} from '@angular/fire/storage'
+import { async } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
