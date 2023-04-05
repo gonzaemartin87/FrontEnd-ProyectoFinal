@@ -24,6 +24,7 @@ import { EditeducacionComponent } from './components/educacion/editeducacion.com
 import { EditskillComponent } from './components/hys/editskill.component';
 import { NewskillComponent } from './components/hys/newskill.component';
 import { EditAcercaDeComponent } from './components/acerca-de/edit-acerca-de.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -52,7 +53,8 @@ import { EditAcercaDeComponent } from './components/acerca-de/edit-acerca-de.com
     AppRoutingModule,
     NgCircleProgressModule.forRoot({}),
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    BrowserAnimationsModule
   ],
   providers: [
     interceptorProvider
