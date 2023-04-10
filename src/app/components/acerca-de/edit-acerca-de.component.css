@@ -1,6 +1,16 @@
 .row{
-    padding: 200px;
+   
     background-color: black;
     color: aliceblue;
     text-align: center;
+}
+
+
+
+input {
+    min-width: 100px;
+}
+
+button {
+    margin-top: 10px;
 }

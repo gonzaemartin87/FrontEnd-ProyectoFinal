@@ -26,8 +26,10 @@ img{
     }
     .redes{
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
+        margin-right: 1em;
+        margin-left: 1em;
     }
     .redes img{
         margin: 0.2em;
