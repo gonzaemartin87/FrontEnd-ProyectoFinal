@@ -1,10 +1,11 @@
 .row{
-    width: 100%;
-    padding: 200px;
+   
     background-color: black;
     color: aliceblue;
     text-align: center;
 }
+
+
 
 input {
     min-width: 100px;
