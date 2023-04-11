@@ -1,13 +1,16 @@
+
 .row{
-   
+    width: 100%;
     background-color: black;
     color: aliceblue;
     text-align: center;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-
-
 input {
+    text-align: center;
     min-width: 100px;
 }
 
