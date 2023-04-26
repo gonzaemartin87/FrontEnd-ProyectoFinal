@@ -11,6 +11,7 @@ import { LoginComponent } from './components/login/login.component';
 import { EditAcercaDeComponent } from './components/acerca-de/edit-acerca-de.component';
 
 
+
 const routes: Routes = [
   {path:'', component: HomeComponent},
   {path:'login', component: LoginComponent},
@@ -25,6 +26,6 @@ const routes: Routes = [
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
 export class AppRoutingModule { }

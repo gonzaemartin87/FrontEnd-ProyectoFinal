@@ -1,10 +1,14 @@
 .row{
     padding: 20px;
-    background-color: black;
-    color: aliceblue;
+    background-color: whitesmoke;
+    color: black;
     text-align: center;
 }
 
 .table{
-    color: aliceblue;
+    color: black;
+}
+
+body{
+    background-color: whitesmoke;
 }

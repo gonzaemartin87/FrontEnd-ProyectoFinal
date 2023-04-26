@@ -1,17 +1,23 @@
 <div class="row">
-    <div class="container">
+        <div class="container">
         <div class="logo">
             <img src="../../../assets/APLogo.png" id="logoAP">
         </div>
         <div class="redes">
-                <a href="https://web.whatsapp.com/send?phone=5492215698886&text=Buenas!%20%F0%9F%91%8B" target="_blank"><img src="../../../assets/whatsapp.png" id="whatsapp"></a>
-                <a href="https://www.linkedin.com/in/gonzaloemartin/" target="_blank"><img src="../../../assets/linkedin.png" id="linkedin"></a>
-                <a href="https://github.com/gonzaemartin87" target="_blank"><img src="../../../assets/github.png" id="github"></a>
-                <a href="https://instagram.com/gonzaemartin" target="_blank"><img src="../../../assets/instagram.png" id="instagram"></a>
-                <a href="https://facebook.com/gonzamartin87" target="_blank"><img src="../../../assets/facebook.png" id="facebook"></a>
-                <a href="mailto:gmsolucionesweb@outlook.com" target="_blank"><img src="../../../assets/mail.png" id="mail"></a>
-                <button type="button" class="btn btn-outline-light" (click)="login()"*ngIf="!isLogged">INICIAR SESIÓN</button>
-                <button type="button" class="btn btn-outline-light" (click)="onLogOut()"*ngIf="isLogged">CERRAR SESIÓN</button>
+                <a href="https://web.whatsapp.com/send?phone=5492215698886&text=Buenas!%20%F0%9F%91%8B" target="_blank" class="btn btn-light"><i class="bi bi-whatsapp"></i></a>
+
+                <a href="https://www.linkedin.com/in/gonzaloemartin/" target="_blank" class="btn btn-light"><i class="bi bi-linkedin"></i></a>
+
+                <a href="https://github.com/gonzaemartin87" target="_blank" class="btn btn-light"><i class="bi bi-github"></i></a>
+
+                <a href="https://instagram.com/gonzaemartin" target="_blank" class="btn btn-light"><i class="bi bi-instagram"></i></a>
+
+                <a href="https://facebook.com/gonzamartin87" target="_blank" class="btn btn-light"><i class="bi bi-facebook"></i></a>
+
+                <a href="mailto:gmsolucionesweb@outlook.com" target="_blank" class="btn btn-light"><i class="bi bi-envelope-at-fill"></i></a>
+
+                <button type="button" class="btn btn-light" (click)="login()"*ngIf="!isLogged">INICIAR SESIÓN</button>
+                <button type="button" class="btn btn-light" (click)="onLogOut()"*ngIf="isLogged">CERRAR SESIÓN</button>
         </div>
-    </div>
+</div>
 </div>

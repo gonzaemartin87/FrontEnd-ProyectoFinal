@@ -1,5 +1,9 @@
 .row{
-    background-color: black;
+    background-color: whitesmoke;
     padding: 20px;
-    color: aliceblue;    
+    color: black;    
 }
+
+body{
+    background-color: whitesmoke;
+}   
