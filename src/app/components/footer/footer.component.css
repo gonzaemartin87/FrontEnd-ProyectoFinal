@@ -1,9 +1,15 @@
 .row{
-    background-color: #cdbdbd;    
+    background-color: grey;    
 }
 footer{
     color: black;
+    font-family: consolas;
     font-size: 12px;
     text-align: center;
     box-shadow: 2px -2px 3px #999;
+}
+
+img{
+    width: 150px;
+    height: 150px;
 }
